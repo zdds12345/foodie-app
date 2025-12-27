@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Ademo</string>
+    <string name="map_placeholder">地图功能需要集成百度地图SDK\n请在build.gradle中添加依赖</string>
+    <string name="no_diary_yet">还没有日记，快去记录吧</string>
+    <string name="start_wheel">开始转盘</string>
+    <string name="manage_options">管理选项</string>
+    <string name="foodie">美食家</string>
+    <string name="explore_food">探索美食，记录生活</string>
+    <string name="statistics">统计数据</string>
+    <string name="zero">0</string>
+    <string name="diary">日记</string>
+    <string name="shop">店铺</string>
+    <string name="food">美食</string>
+    <string name="functions">功能</string>
+    <string name="clear_all_data">清除所有数据</string>
+    <string name="about">关于</string>
+    <string name="what_to_eat_today">今天吃什么？</string>
+    <string name="lucky_wheel">幸运转盘</string>
+    <string name="let_fate_decide">让命运决定今天吃什么</string>
+    <string name="nearby_food">附近美食</string>
+    <string name="discover_restaurants">发现周围的餐厅和美食</string>
+    <string name="food_diary">探店日记</string>
+    <string name="record_food_journey">记录你的美食之旅</string>
+    <string name="food_map">美食地图</string>
+    <string name="view_food_on_map">在地图上查看美食位置</string>
+    <string name="select_shop">选择店铺</string>
+    <string name="rating">评分</string>
+    <string name="images">图片</string>
+    <string name="save">保存</string>
+    <string name="my_location">我的位置</string>
 </resources>

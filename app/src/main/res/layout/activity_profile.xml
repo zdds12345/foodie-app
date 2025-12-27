@@ -54,7 +54,7 @@
                         android:id="@+id/textViewUsername"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="美食家"
+                        android:text="@string/foodie"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         android:textColor="@color/text_primary" />
@@ -62,7 +62,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="探索美食，记录生活"
+                        android:text="@string/explore_food"
                         android:textSize="14sp"
                         android:textColor="@color/text_secondary"
                         android:layout_marginTop="4dp" />
@@ -87,7 +87,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="统计数据"
+                        android:text="@string/statistics"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/text_primary"
@@ -109,7 +109,7 @@
                                 android:id="@+id/textViewDiaryCount"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="0"
+                                android:text="@string/zero"
                                 android:textSize="32sp"
                                 android:textStyle="bold"
                                 android:textColor="@color/primary" />
@@ -117,7 +117,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="日记"
+                                android:text="@string/diary"
                                 android:textSize="14sp"
                                 android:textColor="@color/text_secondary" />
 
@@ -134,7 +134,7 @@
                                 android:id="@+id/textViewShopCount"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="0"
+                                android:text="@string/zero"
                                 android:textSize="32sp"
                                 android:textStyle="bold"
                                 android:textColor="@color/accent" />
@@ -142,7 +142,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="店铺"
+                                android:text="@string/shop"
                                 android:textSize="14sp"
                                 android:textColor="@color/text_secondary" />
 
@@ -159,7 +159,7 @@
                                 android:id="@+id/textViewFoodCount"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="0"
+                                android:text="@string/zero"
                                 android:textSize="32sp"
                                 android:textStyle="bold"
                                 android:textColor="@android:color/holo_orange_dark" />
@@ -167,7 +167,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="美食"
+                                android:text="@string/food"
                                 android:textSize="14sp"
                                 android:textColor="@color/text_secondary" />
 
@@ -195,7 +195,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="功能"
+                        android:text="@string/functions"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/text_primary"
@@ -205,7 +205,7 @@
                         android:id="@+id/textViewClearData"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="清除所有数据"
+                        android:text="@string/clear_all_data"
                         android:textSize="16sp"
                         android:textColor="@color/text_primary"
                         android:padding="12dp"
@@ -217,7 +217,7 @@
                         android:id="@+id/textViewAbout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="关于"
+                        android:text="@string/about"
                         android:textSize="16sp"
                         android:textColor="@color/text_primary"
                         android:padding="12dp"

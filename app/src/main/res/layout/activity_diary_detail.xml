@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="选择店铺"
+                android:text="@string/select_shop"
                 android:textSize="14sp"
                 android:textColor="@color/text_primary"
                 android:layout_marginBottom="8dp" />
@@ -61,7 +61,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="评分"
+                android:text="@string/rating"
                 android:textSize="14sp"
                 android:textColor="@color/text_primary"
                 android:layout_marginBottom="8dp" />
@@ -108,7 +108,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="图片"
+                android:text="@string/images"
                 android:textSize="14sp"
                 android:textColor="@color/text_primary"
                 android:layout_marginBottom="8dp" />
@@ -147,7 +147,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="保存"
+        android:text="@string/save"
         android:textSize="18sp"
         android:textColor="@android:color/white"
         android:backgroundTint="@color/primary"
