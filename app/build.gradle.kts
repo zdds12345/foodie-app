@@ -36,6 +36,13 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    
+    sourceSets {
+        getByName("main") {
+            jniLibs.srcDir("src/main/jniLibs")
+        }
+    }
+    
     buildFeatures {
         viewBinding = true
         dataBinding = true
@@ -43,8 +50,8 @@ android {
 
     packaging {
         jniLibs {
-            useLegacyPackaging = false
-            excludes += "**/libimage_processing_util_jni.so"
+            useLegacyPackaging = true
+            pickFirsts.add("**/libc++_shared.so")
         }
         resources {
             excludes += "META-INF/DEPENDENCIES"
@@ -69,6 +76,7 @@ dependencies {
     
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
+    implementation(fileTree("libs") { include("*.jar") })
     ksp(libs.room.compiler)
     
     implementation(libs.retrofit)
@@ -92,10 +100,6 @@ implementation(libs.gson)
     
     implementation(libs.swiperefresh)
     implementation(libs.cardview)
-    
-    implementation("com.baidu.lbsyun:BaiduMapSDK_Map:7.6.4")
-    implementation("com.baidu.lbsyun:BaiduMapSDK_Search:7.6.4")
-    implementation("com.baidu.lbsyun:BaiduMapSDK_Location:9.6.4")
     
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

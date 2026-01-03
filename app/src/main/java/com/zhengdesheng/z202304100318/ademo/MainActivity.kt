@@ -8,6 +8,7 @@ import com.zhengdesheng.z202304100318.ademo.databinding.ActivityMainBinding
 import com.zhengdesheng.z202304100318.ademo.ui.diary.DiaryListActivity
 import com.zhengdesheng.z202304100318.ademo.ui.map.MapActivity
 import com.zhengdesheng.z202304100318.ademo.ui.profile.ProfileActivity
+import com.zhengdesheng.z202304100318.ademo.ui.recipe.RecipeListActivity
 import com.zhengdesheng.z202304100318.ademo.ui.shop.ShopListActivity
 import com.zhengdesheng.z202304100318.ademo.ui.wheel.WheelActivity
 
@@ -49,6 +50,17 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        binding.cardRecipes.setOnClickListener {
+            Log.d("MainActivity", "Recipes clicked - starting RecipeListActivity")
+            try {
+                val intent = Intent(this, RecipeListActivity::class.java)
+                startActivity(intent)
+                Log.d("MainActivity", "RecipeListActivity started successfully")
+            } catch (e: Exception) {
+                Log.e("MainActivity", "Failed to start RecipeListActivity", e)
+            }
+        }
+
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> true
@@ -62,6 +74,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.navigation_profile -> {
                     startActivity(Intent(this, ProfileActivity::class.java))
+                    true
+                }
+                R.id.navigation_recipes -> {
+                    startActivity(Intent(this, RecipeListActivity::class.java))
                     true
                 }
                 else -> false

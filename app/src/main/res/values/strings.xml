@@ -28,4 +28,17 @@
     <string name="images">图片</string>
     <string name="save">保存</string>
     <string name="my_location">我的位置</string>
+    <string name="recipe_recommendation">食谱推荐</string>
+    <string name="enter_ingredients">输入食材（如：鸡蛋、番茄、大米）</string>
+    <string name="search">搜索</string>
+    <string name="please_enter_ingredients">请输入食材</string>
+    <string name="please_enter_valid_ingredients">请输入有效的食材</string>
+    <string name="recipes">食谱</string>
+    <string name="no_recipes_found">没有找到匹配的食谱</string>
+    <string name="no_shops_found">没有找到附近的商家</string>
+    <string name="centered_on_hangzhou">已定位到杭州市中心</string>
+    <string name="loaded_shops">已加载 %d 个商家</string>
+    <string name="shop_not_found">未找到该商家</string>
+    <string name="shop_info">%1$s\n地址：%2$s\n电话：%3$s</string>
+    <string name="close">关闭</string>
 </resources>

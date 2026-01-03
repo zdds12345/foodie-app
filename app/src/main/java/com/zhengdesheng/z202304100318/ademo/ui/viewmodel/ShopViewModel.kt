@@ -59,8 +59,13 @@ class ShopViewModel(private val repository: ShopRepository) : ViewModel() {
     fun addShop(shop: Shop) {
         viewModelScope.launch {
             try {
-                repository.insertShop(shop)
+                android.util.Log.d("ShopViewModel", "添加店铺: ${shop.name}")
+                val id = repository.insertShop(shop)
+                android.util.Log.d("ShopViewModel", "店铺添加成功，ID: $id")
+                // 重新加载列表
+                loadShops()
             } catch (e: Exception) {
+                android.util.Log.e("ShopViewModel", "添加店铺失败", e)
                 _error.value = e.message
             }
         }

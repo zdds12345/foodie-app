@@ -16,4 +16,8 @@
         android:id="@+id/navigation_profile"
         android:icon="@android:drawable/ic_menu_myplaces"
         android:title="我的" />
+    <item
+        android:id="@+id/navigation_recipes"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/recipes" />
 </menu>

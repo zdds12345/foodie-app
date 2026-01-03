@@ -11,6 +11,7 @@ class ViewModelFactory(
     private val diaryRepository: DiaryRepository,
     private val foodItemRepository: FoodItemRepository
 ) : ViewModelProvider.Factory {
+    @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when (modelClass) {
             ShopViewModel::class.java -> ShopViewModel(shopRepository) as T

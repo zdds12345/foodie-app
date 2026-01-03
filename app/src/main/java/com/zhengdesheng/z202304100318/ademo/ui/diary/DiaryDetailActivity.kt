@@ -9,6 +9,8 @@ import android.provider.MediaStore
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -35,10 +37,34 @@ class DiaryDetailActivity : AppCompatActivity() {
     private val imageUris = mutableListOf<Uri>()
     private val shops = mutableListOf<Shop>()
 
-    companion object {
-        private const val REQUEST_CAMERA = 1
-        private const val REQUEST_GALLERY = 2
-        private const val REQUEST_PERMISSION = 100
+    private val cameraLauncher = registerForActivityResult(StartActivityForResult()) { result ->
+        if (result.resultCode == RESULT_OK && result.data != null) {
+            val uri = result.data?.data
+            uri?.let {
+                imageUris.add(it)
+                addImageToLayout(it)
+            }
+        }
+    }
+
+    private val galleryLauncher = registerForActivityResult(StartActivityForResult()) { result ->
+        if (result.resultCode == RESULT_OK && result.data != null) {
+            val uri = result.data?.data
+            uri?.let {
+                imageUris.add(it)
+                addImageToLayout(it)
+            }
+        }
+    }
+
+    private val requestPermissionLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) { isGranted ->
+        if (isGranted) {
+            openCamera()
+        } else {
+            Toast.makeText(this, "需要相机权限", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -141,42 +167,20 @@ class DiaryDetailActivity : AppCompatActivity() {
 
     private fun checkCameraPermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), REQUEST_PERMISSION)
+            requestPermissionLauncher.launch(Manifest.permission.CAMERA)
         } else {
             openCamera()
         }
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == REQUEST_PERMISSION) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                openCamera()
-            } else {
-                Toast.makeText(this, "需要相机权限", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
-
     private fun openCamera() {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        startActivityForResult(intent, REQUEST_CAMERA)
+        cameraLauncher.launch(intent)
     }
 
     private fun openGallery() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-        startActivityForResult(intent, REQUEST_GALLERY)
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == RESULT_OK && data != null) {
-            val uri = data.data
-            uri?.let {
-                imageUris.add(it)
-                addImageToLayout(it)
-            }
-        }
+        galleryLauncher.launch(intent)
     }
 
     private fun addImageToLayout(uri: Uri) {
