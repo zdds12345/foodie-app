@@ -5,7 +5,7 @@
     {
       "id": "1",
       "title": "宫保鸡丁",
-      "imageUrl": "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 15,
       "cookTimeMinutes": 20,
       "servings": 2,
@@ -31,7 +31,7 @@
     {
       "id": "2",
       "title": "西红柿炒鸡蛋",
-      "imageUrl": "https://images.unsplash.com/photo-1546069901-d5fd2c0e9e4e?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 10,
       "cookTimeMinutes": 15,
       "servings": 2,
@@ -54,7 +54,7 @@
     {
       "id": "3",
       "title": "意大利面",
-      "imageUrl": "https://images.unsplash.com/photo-1626844131082-2567838441372?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 15,
       "cookTimeMinutes": 20,
       "servings": 2,
@@ -78,7 +78,7 @@
     {
       "id": "4",
       "title": "清蒸鱼",
-      "imageUrl": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 15,
       "cookTimeMinutes": 15,
       "servings": 2,
@@ -102,7 +102,7 @@
     {
       "id": "5",
       "title": "红烧肉",
-      "imageUrl": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 20,
       "cookTimeMinutes": 60,
       "servings": 4,
@@ -126,7 +126,7 @@
     {
       "id": "6",
       "title": "炒青菜",
-      "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 5,
       "cookTimeMinutes": 5,
       "servings": 2,
@@ -148,7 +148,7 @@
     {
       "id": "7",
       "title": "煎牛排",
-      "imageUrl": "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 10,
       "cookTimeMinutes": 10,
       "servings": 1,
@@ -171,7 +171,7 @@
     {
       "id": "8",
       "title": "炒饭",
-      "imageUrl": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 10,
       "cookTimeMinutes": 15,
       "servings": 2,
@@ -195,7 +195,7 @@
     {
       "id": "9",
       "title": "酸辣土豆丝",
-      "imageUrl": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 10,
       "cookTimeMinutes": 8,
       "servings": 2,
@@ -219,7 +219,7 @@
     {
       "id": "10",
       "title": "烤鸡翅",
-      "imageUrl": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=800",
+      "imageUrl": "",
       "prepTimeMinutes": 15,
       "cookTimeMinutes": 25,
       "servings": 2,

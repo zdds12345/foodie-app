@@ -10,7 +10,7 @@
       "latitude": 30.2448,
       "longitude": 120.1432,
       "rating": 4.8,
-      "imageUrl": "https://picsum.photos/200/200?random=1",
+      "imageUrl": "",
       "phone": "0571-87990233",
       "businessHours": "10:00-22:00"
     },
@@ -22,7 +22,7 @@
       "latitude": 30.2378,
       "longitude": 120.1547,
       "rating": 4.6,
-      "imageUrl": "https://picsum.photos/200/200?random=2",
+      "imageUrl": "",
       "phone": "0571-87827766",
       "businessHours": "08:00-21:30"
     },
@@ -34,7 +34,7 @@
       "latitude": 30.2642,
       "longitude": 120.1598,
       "rating": 4.5,
-      "imageUrl": "https://picsum.photos/200/200?random=3",
+      "imageUrl": "",
       "phone": "0571-87036668",
       "businessHours": "11:00-14:00, 17:00-21:00"
     },
@@ -46,7 +46,7 @@
       "latitude": 30.2845,
       "longitude": 120.1297,
       "rating": 4.4,
-      "imageUrl": "https://picsum.photos/200/200?random=4",
+      "imageUrl": "",
       "phone": "0571-88927777",
       "businessHours": "11:00-22:00"
     },
@@ -58,7 +58,7 @@
       "latitude": 30.2487,
       "longitude": 120.1521,
       "rating": 4.3,
-      "imageUrl": "https://picsum.photos/200/200?random=5",
+      "imageUrl": "",
       "phone": "0571-87066566",
       "businessHours": "10:30-22:00"
     },
@@ -70,7 +70,7 @@
       "latitude": 30.2478,
       "longitude": 120.1256,
       "rating": 4.7,
-      "imageUrl": "https://picsum.photos/200/200?random=6",
+      "imageUrl": "",
       "phone": "0571-87975858",
       "businessHours": "11:00-14:00, 17:00-21:00"
     },
@@ -82,7 +82,7 @@
       "latitude": 30.2578,
       "longitude": 120.1498,
       "rating": 4.5,
-      "imageUrl": "https://picsum.photos/200/200?random=7",
+      "imageUrl": "",
       "phone": "0571-87215911",
       "businessHours": "10:30-22:00"
     },
@@ -94,7 +94,7 @@
       "latitude": 30.2556,
       "longitude": 120.1534,
       "rating": 4.4,
-      "imageUrl": "https://picsum.photos/200/200?random=8",
+      "imageUrl": "",
       "phone": "0571-87065858",
       "businessHours": "11:00-21:30"
     },
@@ -106,7 +106,7 @@
       "latitude": 30.2552,
       "longitude": 120.1536,
       "rating": 4.3,
-      "imageUrl": "https://picsum.photos/200/200?random=9",
+      "imageUrl": "",
       "phone": "0571-87028888",
       "businessHours": "10:00-22:00"
     },
@@ -118,7 +118,7 @@
       "latitude": 30.2431,
       "longitude": 120.1028,
       "rating": 4.2,
-      "imageUrl": "https://picsum.photos/200/200?random=10",
+      "imageUrl": "",
       "phone": "0571-87969690",
       "businessHours": "09:30-21:00"
     },
@@ -130,7 +130,7 @@
       "latitude": 30.2561,
       "longitude": 120.1557,
       "rating": 4.1,
-      "imageUrl": "https://picsum.photos/200/200?random=11",
+      "imageUrl": "",
       "phone": "0571-87025555",
       "businessHours": "09:00-22:00"
     },
@@ -142,7 +142,7 @@
       "latitude": 30.2589,
       "longitude": 120.1512,
       "rating": 4.0,
-      "imageUrl": "https://picsum.photos/200/200?random=12",
+      "imageUrl": "",
       "phone": "0571-87028888",
       "businessHours": "24小时"
     },
@@ -154,7 +154,7 @@
       "latitude": 30.2573,
       "longitude": 120.1554,
       "rating": 4.1,
-      "imageUrl": "https://picsum.photos/200/200?random=13",
+      "imageUrl": "",
       "phone": "0571-87029999",
       "businessHours": "24小时"
     },
@@ -166,7 +166,7 @@
       "latitude": 30.2568,
       "longitude": 120.1552,
       "rating": 4.5,
-      "imageUrl": "https://picsum.photos/200/200?random=14",
+      "imageUrl": "",
       "phone": "0571-87026666",
       "businessHours": "07:00-23:00"
     },
@@ -178,7 +178,7 @@
       "latitude": 30.2785,
       "longitude": 120.1532,
       "rating": 4.8,
-      "imageUrl": "https://picsum.photos/200/200?random=15",
+      "imageUrl": "",
       "phone": "0571-87027777",
       "businessHours": "10:00-03:00"
     },
@@ -190,7 +190,7 @@
       "latitude": 30.2467,
       "longitude": 120.1542,
       "rating": 4.3,
-      "imageUrl": "https://picsum.photos/200/200?random=16",
+      "imageUrl": "",
       "phone": "0571-87024444",
       "businessHours": "10:30-22:30"
     },
@@ -202,7 +202,7 @@
       "latitude": 30.2587,
       "longitude": 120.1542,
       "rating": 4.6,
-      "imageUrl": "https://picsum.photos/200/200?random=17",
+      "imageUrl": "",
       "phone": "0571-87023333",
       "businessHours": "11:00-14:00, 17:00-22:00"
     },
@@ -214,7 +214,7 @@
       "latitude": 30.2832,
       "longitude": 120.1315,
       "rating": 4.4,
-      "imageUrl": "https://picsum.photos/200/200?random=18",
+      "imageUrl": "",
       "phone": "0571-87022222",
       "businessHours": "11:00-23:00"
     },
@@ -226,7 +226,7 @@
       "latitude": 30.2387,
       "longitude": 120.1452,
       "rating": 4.7,
-      "imageUrl": "https://picsum.photos/200/200?random=19",
+      "imageUrl": "",
       "phone": "0571-87021111",
       "businessHours": "11:00-22:00"
     },
@@ -238,7 +238,7 @@
       "latitude": 30.2498,
       "longitude": 120.1291,
       "rating": 4.9,
-      "imageUrl": "https://picsum.photos/200/200?random=20",
+      "imageUrl": "",
       "phone": "0571-87020000",
       "businessHours": "11:30-14:00, 17:30-22:00"
     }
