@@ -69,6 +69,18 @@ class DiaryViewModel(private val repository: DiaryRepository) : ViewModel() {
         }
     }
 
+    suspend fun addDiaryAndGetId(diary: Diary): Long {
+        return try {
+            val insertedId = repository.insertDiary(diary)
+            android.util.Log.d("DiaryViewModel", "插入日记成功 - ID: $insertedId")
+            insertedId
+        } catch (e: Exception) {
+            android.util.Log.e("DiaryViewModel", "插入日记失败", e)
+            _error.value = e.message
+            -1L
+        }
+    }
+
     fun updateDiary(diary: Diary) {
         viewModelScope.launch {
             try {

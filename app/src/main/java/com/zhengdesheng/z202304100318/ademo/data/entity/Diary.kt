@@ -12,7 +12,7 @@ import androidx.room.Index
             entity = Shop::class,
             parentColumns = ["id"],
             childColumns = ["shopId"],
-            onDelete = ForeignKey.CASCADE
+            onDelete = ForeignKey.SET_NULL
         )
     ],
     indices = [Index("shopId")]
@@ -20,7 +20,7 @@ import androidx.room.Index
 data class Diary(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
-    val shopId: Long,
+    val shopId: Long?,
     val title: String,
     val content: String,
     val rating: Float,
