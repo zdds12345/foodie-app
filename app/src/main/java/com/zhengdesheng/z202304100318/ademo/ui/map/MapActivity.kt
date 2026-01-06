@@ -115,16 +115,6 @@ class MapActivity : AppCompatActivity() {
             }
             android.util.Log.d("MapActivity", "setOnClickListener 完成")
             
-            if (binding.fabAddToNearby == null) {
-                android.util.Log.e("MapActivity", "fabAddToNearby 为 null")
-                return
-            }
-            android.util.Log.d("MapActivity", "fabAddToNearby 不为 null")
-            
-            binding.fabAddToNearby.setOnClickListener {
-                addNearbyRestaurantsToDatabase()
-            }
-            
             android.util.Log.d("MapActivity", "setupUI 完成")
         } catch (e: Exception) {
             android.util.Log.e("MapActivity", "setupUI 发生异常", e)
@@ -409,9 +399,6 @@ class MapActivity : AppCompatActivity() {
                 
                 Toast.makeText(this@MapActivity, "搜索到 ${nearbyRestaurants.size} 家附近餐饮", Toast.LENGTH_SHORT).show()
                 android.util.Log.d("MapActivity", "附近餐饮搜索完成")
-                
-                // 自动将搜索结果保存到数据库
-                addNearbyRestaurantsToDatabase()
             } else {
                 android.util.Log.e("MapActivity", "POI搜索失败，errorCode=${result.error}")
                 Toast.makeText(this@MapActivity, "搜索附近餐饮失败", Toast.LENGTH_SHORT).show()
@@ -498,36 +485,6 @@ class MapActivity : AppCompatActivity() {
                 android.util.Log.e("MapActivity", "加载店铺失败", e)
                 withContext(Dispatchers.Main) {
                     Toast.makeText(this@MapActivity, "加载店铺失败: ${e.message}", Toast.LENGTH_LONG).show()
-                }
-            }
-        }
-    }
-
-    private fun addNearbyRestaurantsToDatabase() {
-        if (nearbyRestaurants.isEmpty()) {
-            Toast.makeText(this, "没有可添加的餐饮", Toast.LENGTH_SHORT).show()
-            return
-        }
-        
-        lifecycleScope.launch(Dispatchers.IO) {
-            try {
-                val shopDao = AppDatabase.getDatabase(applicationContext).shopDao()
-                
-                // 清除原有数据，实现同步功能
-                shopDao.deleteAllShops()
-                android.util.Log.d("MapActivity", "已清除原有店铺数据")
-                
-                // 添加所有搜索到的餐饮
-                shopDao.insertShops(nearbyRestaurants)
-                android.util.Log.d("MapActivity", "已添加 ${nearbyRestaurants.size} 家餐饮到数据库")
-                
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(this@MapActivity, "已将 ${nearbyRestaurants.size} 家餐饮同步到附近美食", Toast.LENGTH_SHORT).show()
-                }
-            } catch (e: Exception) {
-                android.util.Log.e("MapActivity", "同步餐饮失败", e)
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(this@MapActivity, "同步失败: ${e.message}", Toast.LENGTH_SHORT).show()
                 }
             }
         }

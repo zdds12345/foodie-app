@@ -47,14 +47,4 @@
         android:contentDescription="@string/my_location"
         android:src="@android:drawable/ic_menu_mylocation" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAddToNearby"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:layout_marginBottom="88dp"
-        android:contentDescription="添加到附近美食"
-        android:src="@android:drawable/ic_input_add" />
-
 </FrameLayout>
